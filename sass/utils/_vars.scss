@@ -1,0 +1,42 @@
+:root {
+  --main-gray: #333333;
+  --accent-gray-4: #bdbdbd;
+  --accent-gray-6: #f2f2f2;
+  --white-color: #ffffff;
+
+  //   --button-color: #f5f4fa;
+  //   --main-margin: 30px;
+  //   --second-margin: 50px;
+  //   --icon-color: #afb1b8;
+  //   --trans-dur: 250ms;
+  //   --trans-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@font-face {
+  font-family: 'TT Hoves Regular';
+  src: url('../fonts/TT Hoves Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'TT Hoves Light';
+  src: url('../fonts/TT Hoves Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'TT Hoves Bold';
+  src: url('../fonts/TT Hoves Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'TT Hoves Black';
+  src: url('../fonts/TT Hoves Black.ttf') format('truetype');
+  font-weight: 900;
+}
+
+body {
+  font-family: 'TT Hoves Regular', Tahoma, sans-serif;
+  color: var(--main-gray);
+}
