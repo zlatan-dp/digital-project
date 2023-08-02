@@ -1,0 +1,28 @@
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 24px 50px;
+  border: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--main-gray);
+
+  &::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url('../icons/right-arrow.png');
+    background-size: cover;
+  }
+}
+
+.btn-white {
+  background-color: var(--white-color);
+}
+
+.btn-absolute {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}

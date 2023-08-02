@@ -1,0 +1,27 @@
+.header {
+  min-width: 370px;
+  padding-top: 29px;
+  padding-bottom: 29px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.menu-list {
+  display: flex;
+  gap: 60px;
+
+  &-link {
+    color: var(--main-gray);
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 4px 0;
+  }
+}
+
+.current {
+  border-top: 1px solid var(--main-gray);
+  border-bottom: 1px solid var(--main-gray);
+}

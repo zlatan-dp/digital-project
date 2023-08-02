@@ -1,0 +1,35 @@
+.about {
+  .container {
+    display: flex;
+    gap: 30px;
+
+    background-color: #fbfbfb;
+    padding-top: 30px;
+  }
+}
+
+.about-imag-list {
+  width: 670px;
+  padding-left: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.about-imag-item {
+  width: 270px;
+}
+
+.about-info-wrap {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.about-info-text {
+  font-family: 'TT Hoves Light';
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.56;
+}

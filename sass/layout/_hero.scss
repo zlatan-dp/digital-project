@@ -1,0 +1,50 @@
+.hero {
+  padding-bottom: 60px;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+}
+
+.hero-title-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  padding-bottom: 104px;
+}
+.hero-title {
+  width: 278px;
+
+  font-family: 'TT Hoves Light';
+  font-size: 64px;
+  font-weight: 300;
+  color: var(--accent-gray-4);
+  text-transform: uppercase;
+
+  .title-accent {
+    font-family: 'TT Hoves Bold';
+    color: var(--main-gray);
+  }
+}
+
+.hero-btns-wrap {
+  display: flex;
+  gap: 23px;
+}
+
+.hero-nav-btn {
+  padding: 15px;
+  background-color: var(--white-color);
+  border: 1px solid var(--accent-gray-6);
+  cursor: pointer;
+}
+
+.hero-title-number {
+  font-size: 24px;
+  color: var(--accent-gray-4);
+}
+
+.hero-img-wrap {
+  position: relative;
+}
