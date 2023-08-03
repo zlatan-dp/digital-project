@@ -3,16 +3,18 @@
     display: flex;
     gap: 30px;
 
-    background-color: #fbfbfb;
+    // background-color: #fbfbfb;
+    background-image: url('../img/about-bg.png');
+    background-repeat: no-repeat;
     padding-top: 30px;
   }
 }
 
 .about-imag-list {
-  width: 670px;
+  width: 370px;
   padding-left: 100px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
 }
 
@@ -20,6 +22,10 @@
   width: 270px;
 }
 
+.about-imag-position {
+  position: relative;
+  top: 30px;
+}
 .about-info-wrap {
   width: 420px;
   display: flex;

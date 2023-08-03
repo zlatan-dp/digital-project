@@ -1,0 +1,23 @@
+.tasks-list {
+  display: flex;
+  justify-content: space-between;
+
+  &-item {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+}
+
+.task-number {
+  font-family: 'SF Pro Display', sans-serif;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 1.19;
+  color: var(--accent-gray-6);
+}
+
+.task-text {
+  font-size: 22px;
+  line-height: 1.63;
+}

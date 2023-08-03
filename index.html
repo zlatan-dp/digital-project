@@ -11,6 +11,8 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
+
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Digital Project</title>
   </head>
@@ -66,13 +68,19 @@
             <li class="about-imag-item">
               <img src="./img/about-img-1.jpg" alt="company photo" width="270" />
             </li>
-            <li class="about-imag-item">
-              <img src="./img/about-img-3.jpg" alt="company photo" width="270" />
-            </li>
+
             <li class="about-imag-item">
               <img src="./img/about-img-2.jpg" alt="company photo" width="270" />
             </li>
           </ul>
+          <div class="about-image-item">
+            <img
+              src="./img/about-img-3.jpg"
+              alt="company photo"
+              width="270"
+              class="about-imag-position"
+            />
+          </div>
           <div class="about-info-wrap">
             <h2 class="title">Про компанію</h2>
             <p class="about-info-text">
@@ -86,6 +94,103 @@
           </div>
         </div>
       </section>
+
+      <section class="tasks section">
+        <div class="container">
+          <h2 class="title">Основні задачі</h2>
+          <ul class="tasks-list list">
+            <li class="tasks-list-item">
+              <p class="task-number">1</p>
+              <p class="task-text" style="width: 263px">
+                Створення комфортних умов та підвищення якості обслуговування клієнтів
+              </p>
+            </li>
+            <li class="tasks-list-item">
+              <p class="task-number">2</p>
+              <p class="task-text" style="width: 420px">
+                Постійно вдосконалювати якість послуг шляхом навчання персоналу, закупівлі нового
+                обладнання та посиленої реклами на ринку
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="projects section">
+        <div class="container">
+          <h2 class="title">Наші проєкти</h2>
+          <ul class="projects-list list">
+            <li class="projects-list-item">
+              <img src="./img/project-img-1.jpg" alt="project photo" width="570" />
+            </li>
+            <li class="projects-list-item">
+              <img src="./img/project-img-2.jpg" alt="project photo" width="570" />
+            </li>
+            <li class="projects-list-item">
+              <img src="./img/project-img-3.jpg" alt="project photo" width="270" />
+            </li>
+            <li class="projects-list-item">
+              <img src="./img/project-img-4.jpg" alt="project photo" width="470" />
+            </li>
+            <li class="projects-list-item">
+              <img src="./img/project-img-5.jpg" alt="project photo" width="370" />
+            </li>
+          </ul>
+          <div class="project-btn-wrap">
+            <a href="" class="link btn btn-gray">всі проєкти</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="connect section">
+        <div class="container">
+          <h2 class="title">Зв'язатися з нами</h2>
+          <div class="connect-wrap">
+            <form class="connect-form">
+              <div class="connect-inputs-wrap">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Ім'я"
+                  class="connect-form-input"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="tel"
+                  placeholder="Номер телефона"
+                  class="connect-form-input"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="connect-form-input"
+                  required
+                />
+                <input
+                  type="text"
+                  name="services"
+                  placeholder="Товар/послуга, що цікавить"
+                  class="connect-form-input"
+                  required
+                />
+                <textarea
+                  name="feedback"
+                  id="feedback"
+                  placeholder="Повідомлення"
+                  class="connect-form-feedback"
+                ></textarea>
+              </div>
+            </form>
+            <div class="connect-img-wrap">
+              <img src="./img/connect-img.jpg" alt="connect photo" width="749" />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="./js/placeholder.js"></script>
   </body>
 </html>

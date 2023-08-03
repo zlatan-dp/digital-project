@@ -16,7 +16,6 @@ ol {
 
 img {
   display: block;
-  width: 100%;
   height: auto;
 }
 
@@ -89,7 +88,7 @@ body {
 }
 
 .btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
   padding: 24px 50px;
@@ -108,6 +107,11 @@ body {
 
 .btn-white {
   background-color: var(--white-color);
+}
+
+.btn-gray {
+  background-color: var(--main-gray);
+  color: var(--white-color);
 }
 
 .btn-absolute {
@@ -203,20 +207,26 @@ body {
 .about .container {
   display: flex;
   gap: 30px;
-  background-color: #fbfbfb;
+  background-image: url("../img/about-bg.png");
+  background-repeat: no-repeat;
   padding-top: 30px;
 }
 
 .about-imag-list {
-  width: 670px;
+  width: 370px;
   padding-left: 100px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
 }
 
 .about-imag-item {
   width: 270px;
+}
+
+.about-imag-position {
+  position: relative;
+  top: 30px;
 }
 
 .about-info-wrap {
@@ -232,4 +242,83 @@ body {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.56;
+}
+
+.tasks-list {
+  display: flex;
+  justify-content: space-between;
+}
+.tasks-list-item {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.task-number {
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 1.19;
+  color: var(--accent-gray-6);
+}
+
+.task-text {
+  font-size: 22px;
+  line-height: 1.63;
+}
+
+.projects-list {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-btn-wrap {
+  display: flex;
+  justify-content: end;
+}
+
+.connect-wrap {
+  display: flex;
+  margin-top: 22px;
+  gap: 30px;
+}
+
+.connect-inputs-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 391px;
+}
+
+.connect-form-input {
+  width: 100%;
+  padding: 15px 21px;
+  background-color: #f3f3f3;
+  border: none;
+}
+.connect-form-input::placeholder {
+  font-size: 14px;
+  line-height: 1.17;
+  color: #8d8d8d;
+}
+
+.connect-form-input::before {
+  content: "*";
+  color: red;
+}
+
+.connect-form-feedback {
+  width: 100%;
+  height: 147px;
+  padding: 15px 21px;
+  background-color: #f3f3f3;
+  border: none;
+}
+.connect-form-feedback::placeholder {
+  font-size: 14px;
+  line-height: 1.17;
+  color: #8d8d8d;
 }/*# sourceMappingURL=main.css.map */
