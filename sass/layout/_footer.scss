@@ -1,0 +1,59 @@
+.footer {
+  padding-top: 58px;
+  background-color: #2c2c2c;
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer-title {
+  margin-bottom: 25px;
+  font-family: 'TT Hoves Bold';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  color: var(--white-color);
+}
+
+.footer-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-info-link {
+  font-family: 'TT Hoves Medium';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--white-color);
+}
+
+.footer-info-link {
+  fill: var(--white-color);
+}
+
+.footer-contact-wrap {
+  width: 255px;
+}
+
+.contact-link {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.footer-contact-icon {
+  flex-shrink: 0;
+}
+
+.footer-soc-list {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-soc-icon {
+  fill: var(--white-color);
+}
