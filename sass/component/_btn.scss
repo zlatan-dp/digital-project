@@ -8,23 +8,44 @@
   text-transform: uppercase;
   color: var(--main-gray);
   cursor: pointer;
+  transition: background-color var(--trans-dur) var(--trans-timing-function);
+}
+
+.btn-white {
+  background-color: var(--white-color);
 
   &::after {
     content: '';
     width: 24px;
     height: 24px;
-    background-image: url('../icons/right-arrow.png');
-    background-size: cover;
+    background-image: url('../icons/right-arrow.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
   }
-}
 
-.btn-white {
-  background-color: var(--white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-gray-4);
+  }
 }
 
 .btn-gray {
   background-color: var(--main-gray);
   color: var(--white-color);
+  &::after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background-image: url('../icons/right-arrow-light.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+  }
+  &:hover,
+  &:focus {
+    background-color: #555555;
+  }
 }
 
 .btn-absolute {

@@ -3,13 +3,13 @@
   --accent-gray-4: #bdbdbd;
   --accent-gray-6: #f2f2f2;
   --white-color: #ffffff;
+  --trans-dur: 300ms;
+  --trans-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   //   --button-color: #f5f4fa;
   //   --main-margin: 30px;
   //   --second-margin: 50px;
   //   --icon-color: #afb1b8;
-  //   --trans-dur: 250ms;
-  //   --trans-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @font-face {

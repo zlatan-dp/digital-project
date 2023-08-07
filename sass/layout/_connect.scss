@@ -16,18 +16,19 @@
   //   height: 46px;
   padding: 15px 21px;
   background-color: #f3f3f3;
-  border: none;
+  outline: none;
+  border-color: transparent;
+  transition: border-color var(--trans-dur) var(--trans-timing-function);
 
   &::placeholder {
     font-size: 14px;
     line-height: 1.17;
     color: #8d8d8d;
   }
-}
 
-.connect-form-input::before {
-  content: '*';
-  color: red;
+  &:focus {
+    border-color: var(--main-gray);
+  }
 }
 
 .connect-form-feedback {
@@ -35,11 +36,19 @@
   height: 147px;
   padding: 15px 21px;
   background-color: #f3f3f3;
-  border: none;
+  outline: none;
+  resize: none;
+  border-color: transparent;
+  transition: border-color var(--trans-dur) var(--trans-timing-function);
+
   &::placeholder {
     font-size: 14px;
     line-height: 1.17;
     color: #8d8d8d;
+  }
+
+  &:focus {
+    border-color: var(--main-gray);
   }
 }
 
