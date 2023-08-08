@@ -6,25 +6,47 @@
     // background-color: #fbfbfb;
     background-image: url('../img/about-bg.png');
     background-repeat: no-repeat;
-    padding-top: 30px;
+    @include desk {
+      padding-top: 30px;
+    }
   }
 }
 
 .about-imag-list {
-  width: 370px;
-  padding-left: 100px;
   display: flex;
   flex-direction: column;
   gap: 30px;
+
+  @include desk {
+    padding-left: 100px;
+  }
 }
 
 .about-imag-item {
-  width: 270px;
+  width: 135px;
+
+  @include desk {
+    width: 270px;
+  }
+}
+
+.item-mob {
+  @include tab {
+    display: none;
+  }
+}
+
+.item-tab {
+  display: none;
+  @include tab {
+    display: block;
+  }
 }
 
 .about-imag-position {
   position: relative;
   top: 30px;
+  width: 100%;
 }
 .about-info-wrap {
   width: 420px;

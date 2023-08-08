@@ -1,6 +1,14 @@
 .title {
   font-family: 'TT Hoves Light';
   font-weight: 300;
-  font-size: 64px;
+  font-size: 32px;
   color: var(--accent-gray-4);
+
+  @include mob {
+    font-size: 48px;
+  }
+
+  @include desk {
+    font-size: 64px;
+  }
 }

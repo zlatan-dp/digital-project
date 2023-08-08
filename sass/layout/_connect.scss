@@ -64,3 +64,10 @@
   line-height: 1.24;
   color: var(--main-gray);
 }
+
+.connect-img-wrap {
+  display: none;
+  @include tab {
+    display: block;
+  }
+}

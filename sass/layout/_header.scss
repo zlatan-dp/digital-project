@@ -10,7 +10,15 @@
 }
 
 .header-nav {
-  margin-right: 223px;
+  display: none;
+
+  @include tab {
+    display: block;
+  }
+
+  @include desk {
+    margin-right: 223px;
+  }
 }
 
 .menu-list {
@@ -34,4 +42,56 @@
 .current {
   border-top: 1px solid var(--main-gray);
   border-bottom: 1px solid var(--main-gray);
+}
+
+.mob-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  background-color: var(--accent-gray-6);
+  width: 270px;
+  padding: 30px;
+}
+
+.mob-menu-btn {
+  border: none;
+  background-color: transparent;
+
+  @include tab {
+    display: none;
+  }
+}
+
+.mob-menu-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover .mob-menu-icon {
+    fill: var(--accent-gray-4);
+  }
+  &:focus .mob-menu-icon {
+    fill: var(--accent-gray-4);
+  }
+}
+
+.mob-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }

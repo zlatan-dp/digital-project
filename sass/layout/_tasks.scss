@@ -1,15 +1,23 @@
 .tasks-list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 
   &-item {
     display: flex;
     gap: 30px;
     align-items: center;
   }
+
+  @include desk {
+    justify-content: space-between;
+    flex-direction: row;
+  }
 }
 
 .task-number {
+  flex-shrink: 0;
+  width: 121px;
+  text-align: center;
   font-family: 'SF Pro Display', sans-serif;
   font-weight: 700;
   font-size: 200px;

@@ -10,14 +10,28 @@
 .hero-title-wrap {
   display: flex;
   flex-direction: column;
-  gap: 90px;
-  padding-bottom: 104px;
+  gap: 15px;
+
+  @include mob {
+    padding-bottom: 30px;
+    gap: 30px;
+  }
+
+  @include tab {
+    gap: 60px;
+  }
+
+  @include desk {
+    gap: 90px;
+
+    padding-bottom: 104px;
+  }
 }
 .hero-title {
-  width: 278px;
+  width: 178px;
 
   font-family: 'TT Hoves Light';
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 300;
   color: var(--accent-gray-4);
   text-transform: uppercase;
@@ -25,6 +39,15 @@
   .title-accent {
     font-family: 'TT Hoves Bold';
     color: var(--main-gray);
+  }
+
+  @include tab {
+    font-size: 48px;
+    width: 278px;
+  }
+
+  @include desk {
+    font-size: 64px;
   }
 }
 
@@ -54,4 +77,12 @@
 
 .hero-img-wrap {
   position: relative;
+  width: 272px;
+  @include tab {
+    width: 448px;
+  }
+
+  @include desk {
+    width: 770px;
+  }
 }

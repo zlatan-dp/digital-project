@@ -16,6 +16,7 @@ ol {
 
 img {
   display: block;
+  width: 100%;
   height: auto;
 }
 
@@ -64,6 +65,12 @@ img {
 body {
   font-family: "TT Hoves Regular", Tahoma, sans-serif;
   color: var(--main-gray);
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .container {
@@ -142,15 +149,25 @@ body {
 
 .btn-absolute {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: -1px;
+  bottom: -1px;
 }
 
 .title {
   font-family: "TT Hoves Light";
   font-weight: 300;
-  font-size: 64px;
+  font-size: 32px;
   color: var(--accent-gray-4);
+}
+@media screen and (min-width: 480px) {
+  .title {
+    font-size: 48px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 64px;
+  }
 }
 
 .header {
@@ -165,7 +182,17 @@ body {
 }
 
 .header-nav {
-  margin-right: 223px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-nav {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-nav {
+    margin-right: 223px;
+  }
 }
 
 .menu-list {
@@ -188,6 +215,57 @@ body {
   border-bottom: 1px solid var(--main-gray);
 }
 
+.mob-menu {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  background-color: var(--accent-gray-6);
+  width: 270px;
+  padding: 30px;
+}
+
+.mob-menu-btn {
+  border: none;
+  background-color: transparent;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu-btn {
+    display: none;
+  }
+}
+
+.mob-menu-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  border: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mob-menu-close:hover .mob-menu-icon {
+  fill: var(--accent-gray-4);
+}
+.mob-menu-close:focus .mob-menu-icon {
+  fill: var(--accent-gray-4);
+}
+
+.mob-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
 .hero {
   padding-bottom: 60px;
 }
@@ -200,14 +278,30 @@ body {
 .hero-title-wrap {
   display: flex;
   flex-direction: column;
-  gap: 90px;
-  padding-bottom: 104px;
+  gap: 15px;
+}
+@media screen and (min-width: 480px) {
+  .hero-title-wrap {
+    padding-bottom: 30px;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-title-wrap {
+    gap: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title-wrap {
+    gap: 90px;
+    padding-bottom: 104px;
+  }
 }
 
 .hero-title {
-  width: 278px;
+  width: 178px;
   font-family: "TT Hoves Light";
-  font-size: 64px;
+  font-size: 32px;
   font-weight: 300;
   color: var(--accent-gray-4);
   text-transform: uppercase;
@@ -215,6 +309,17 @@ body {
 .hero-title .title-accent {
   font-family: "TT Hoves Bold";
   color: var(--main-gray);
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 48px;
+    width: 278px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-size: 64px;
+  }
 }
 
 .hero-btns-wrap {
@@ -240,6 +345,17 @@ body {
 
 .hero-img-wrap {
   position: relative;
+  width: 272px;
+}
+@media screen and (min-width: 768px) {
+  .hero-img-wrap {
+    width: 448px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-img-wrap {
+    width: 770px;
+  }
 }
 
 .about .container {
@@ -247,24 +363,52 @@ body {
   gap: 30px;
   background-image: url("../img/about-bg.png");
   background-repeat: no-repeat;
-  padding-top: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .about .container {
+    padding-top: 30px;
+  }
 }
 
 .about-imag-list {
-  width: 370px;
-  padding-left: 100px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .about-imag-list {
+    padding-left: 100px;
+  }
+}
 
 .about-imag-item {
-  width: 270px;
+  width: 135px;
+}
+@media screen and (min-width: 1200px) {
+  .about-imag-item {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .item-mob {
+    display: none;
+  }
+}
+
+.item-tab {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .item-tab {
+    display: block;
+  }
 }
 
 .about-imag-position {
   position: relative;
   top: 30px;
+  width: 100%;
 }
 
 .about-info-wrap {
@@ -284,15 +428,24 @@ body {
 
 .tasks-list {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .tasks-list-item {
   display: flex;
   gap: 30px;
   align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .tasks-list {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
 
 .task-number {
+  flex-shrink: 0;
+  width: 121px;
+  text-align: center;
   font-family: "SF Pro Display", sans-serif;
   font-weight: 700;
   font-size: 200px;
@@ -319,6 +472,86 @@ body {
 }
 .projects-list-link:hover, .projects-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects-list-item:nth-child(1) {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .projects-list-item:nth-child(1) {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects-list-item:nth-child(1) {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-list-item:nth-child(1) {
+    width: 570px;
+  }
+}
+
+.projects-list-item:nth-child(2) {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .projects-list-item:nth-child(2) {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .projects-list-item:nth-child(2) {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-list-item:nth-child(2) {
+    width: 570px;
+  }
+}
+
+.projects-list-item:nth-child(3) {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .projects-list-item:nth-child(3) {
+    width: 154px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-list-item:nth-child(3) {
+    width: 270px;
+  }
+}
+
+.projects-list-item:nth-child(4) {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .projects-list-item:nth-child(4) {
+    width: 266px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-list-item:nth-child(4) {
+    width: 470px;
+  }
+}
+
+.projects-list-item:nth-child(5) {
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .projects-list-item:nth-child(5) {
+    width: 225px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .projects-list-item:nth-child(5) {
+    width: 370px;
+  }
 }
 
 .projects-list-link:hover .projects-info {
@@ -348,9 +581,14 @@ body {
 .projects-info-text {
   font-family: "TT Hoves Bold";
   font-weight: 700;
-  font-size: 64px;
+  font-size: 40px;
   text-transform: uppercase;
   color: var(--white-color);
+}
+@media screen and (min-width: 1200px) {
+  .projects-info-text {
+    font-size: 64px;
+  }
 }
 
 .projects-info-action {
@@ -441,6 +679,15 @@ body {
   color: var(--main-gray);
 }
 
+.connect-img-wrap {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .connect-img-wrap {
+    display: block;
+  }
+}
+
 .footer {
   background-color: #2c2c2c;
   position: relative;
@@ -459,7 +706,37 @@ body {
   padding-top: 58px;
   padding-bottom: 60px;
   display: flex;
-  justify-content: space-between;
+  gap: 30px;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 480px) {
+  .footer-main-wrap {
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-main-wrap {
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+
+.footer-logo-wrap {
+  width: 100%;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-logo-wrap {
+    width: auto;
+  }
+}
+
+.footer-logo {
+  display: inline-block;
 }
 
 .footer-title {
@@ -494,8 +771,25 @@ body {
   fill: currentColor;
 }
 
+.footer-info-wrap,
+.footer-soc-wrap {
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .footer-info-wrap,
+  .footer-soc-wrap {
+    text-align: left;
+  }
+}
+
 .footer-contact-wrap {
   width: 255px;
+  text-align: center;
+}
+@media screen and (min-width: 480px) {
+  .footer-contact-wrap {
+    text-align: left;
+  }
 }
 
 .contact-link {
@@ -511,7 +805,11 @@ body {
 .footer-soc-list {
   display: flex;
   gap: 10px;
-  transform: translateX(-16px);
+}
+@media screen and (min-width: 768px) {
+  .footer-soc-list {
+    transform: translateX(-16px);
+  }
 }
 
 .footer-soc-link {
