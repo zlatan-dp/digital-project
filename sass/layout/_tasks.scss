@@ -6,12 +6,19 @@
     display: flex;
     gap: 30px;
     align-items: center;
+
+    opacity: 0;
+    transition: opacity 1s ease;
   }
 
   @include desk {
     justify-content: space-between;
     flex-direction: row;
   }
+}
+
+.tasks-list-item.animate__flipInY {
+  opacity: 1;
 }
 
 .task-number {

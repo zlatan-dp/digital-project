@@ -298,6 +298,10 @@ body {
   }
 }
 
+.hero-img-wrap {
+  animation-delay: 0.2s;
+}
+
 .hero-title {
   width: 178px;
   font-family: "TT Hoves Light";
@@ -325,6 +329,7 @@ body {
 .hero-btns-wrap {
   display: flex;
   gap: 23px;
+  animation-delay: 0.1s;
 }
 
 .hero-nav-btn {
@@ -341,6 +346,7 @@ body {
 .hero-title-number {
   font-size: 24px;
   color: var(--accent-gray-4);
+  animation-delay: 0.2s;
 }
 
 .hero-img-wrap {
@@ -383,11 +389,17 @@ body {
 
 .about-imag-item {
   width: 135px;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 @media screen and (min-width: 1200px) {
   .about-imag-item {
     width: 270px;
   }
+}
+
+.about-imag-item.animate__fadeInUp {
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
@@ -434,12 +446,18 @@ body {
   display: flex;
   gap: 30px;
   align-items: center;
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 @media screen and (min-width: 1200px) {
   .tasks-list {
     justify-content: space-between;
     flex-direction: row;
   }
+}
+
+.tasks-list-item.animate__flipInY {
+  opacity: 1;
 }
 
 .task-number {
@@ -472,6 +490,15 @@ body {
 }
 .projects-list-link:hover, .projects-list-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects-list-item {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.projects-list-item.animate__zoomIn {
+  opacity: 1;
 }
 
 .projects-list-item:nth-child(1) {

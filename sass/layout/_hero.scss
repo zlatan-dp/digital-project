@@ -27,6 +27,11 @@
     padding-bottom: 104px;
   }
 }
+
+.hero-img-wrap {
+  animation-delay: 0.2s;
+}
+
 .hero-title {
   width: 178px;
 
@@ -54,6 +59,7 @@
 .hero-btns-wrap {
   display: flex;
   gap: 23px;
+  animation-delay: 0.1s;
 }
 
 .hero-nav-btn {
@@ -73,6 +79,7 @@
 .hero-title-number {
   font-size: 24px;
   color: var(--accent-gray-4);
+  animation-delay: 0.2s;
 }
 
 .hero-img-wrap {

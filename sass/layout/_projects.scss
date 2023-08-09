@@ -16,6 +16,15 @@
   }
 }
 
+.projects-list-item {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.projects-list-item.animate__zoomIn {
+  opacity: 1;
+}
+
 .projects-list-item:nth-child(1) {
   width: 100%;
   @include mob {

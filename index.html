@@ -18,6 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Digital Project</title>
@@ -70,8 +74,10 @@
       <section class="hero">
         <div class="container">
           <div class="hero-title-wrap">
-            <h1 class="hero-title">project <span class="title-accent">home</span></h1>
-            <div class="hero-btns-wrap">
+            <h1 class="hero-title animate__animated animate__flipInY">
+              project <span class="title-accent">home</span>
+            </h1>
+            <div class="hero-btns-wrap animate__animated animate__flipInY">
               <button class="hero-nav-btn">
                 <svg class="nav-btn-icon" width="24" height="24">
                   <use href="./icons/icons.svg#icon-arrow-left2"></use>
@@ -83,9 +89,9 @@
                 </svg>
               </button>
             </div>
-            <p class="hero-title-number">01 / 02</p>
+            <p class="hero-title-number animate__animated animate__flipInY">01 / 02</p>
           </div>
-          <div class="hero-img-wrap">
+          <div class="hero-img-wrap animate__animated animate__fadeInUp">
             <img src="./img/hero-img.jpg" alt="building photo" width="770" />
             <a href="" class="link btn btn-white btn-absolute">подивитись</a>
           </div>
@@ -106,7 +112,7 @@
               <img src="./img/about-img-3.jpg" alt="company photo" width="270" />
             </li>
           </ul>
-          <div class="about-image-item item-tab">
+          <div class="about-imag-item item-tab">
             <img
               src="./img/about-img-3.jpg"
               alt="company photo"
@@ -369,5 +375,6 @@
       </div>
     </footer>
     <script src="./js/menu.js"></script>
+    <script src="./js/animation.js"></script>
   </body>
 </html>

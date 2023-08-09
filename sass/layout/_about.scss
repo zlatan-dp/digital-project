@@ -25,11 +25,17 @@
 .about-imag-item {
   width: 135px;
 
+  opacity: 0;
+  transition: opacity 1s ease;
+
   @include desk {
     width: 270px;
   }
 }
 
+.about-imag-item.animate__fadeInUp {
+  opacity: 1;
+}
 .item-mob {
   @include tab {
     display: none;
