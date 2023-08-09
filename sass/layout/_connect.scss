@@ -8,7 +8,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 391px;
+  width: 360px;
+  @include tab {
+    width: 391px;
+  }
 }
 
 .connect-form-input {
